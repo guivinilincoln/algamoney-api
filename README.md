@@ -1,16 +1,18 @@
-O que é SOAFEA ? 
+# Projeto de API com Spring REST 
+
+#### O que é SOAFEA ? 
 Service-Oriented Front-End Architecture = Arquiterura de Front-End Orientada a Serviços
 
-Ideia básica:
+#### Ideia básica:
 Remover toda a lógica de apresetação de apresentação do servidor e levar para o cliente.
 
-Benefícios:
-.Desenvolvimento assíncrono do front-end e back-end;
-.Escalabilidade;
-.Interoperabildiade;
-.Melhor experiência do usuário e baixa latência;
+#### Benefícios:
+  -  Desenvolvimento assíncrono do front-end e back-end;
+  - Escalabilidade;
+  - Interoperabildiade;
+  - Melhor experiência do usuário e baixa latência;
 
-O que é REST ?
+####  O que é REST ?
 
 Rest, que é a abreviatura de Representational State Transfer, é um conjunto de restrições utilizadas para que as requisições HTTP atendam as diretrizes definidas na arquitetura. Basicamente, as restrições determinadas pela arquitetura Rest são:
 
@@ -22,10 +24,10 @@ interface uniforme: agrupa outros quatro conceitos em que determina que os recur
 Portanto, quando se fala em Rest API, significa utilizar uma API para acessar aplicações back-end, de modo que essa comunicação seja feita com os padrões definidos pelo estilo de arquitetura Rest.
 
 
-Ambiente de desenvolvimento REST:
+####  Ambiente de desenvolvimento REST:
 
-Java 8 ou versões acima;
-Spring Tools 4 for Eclipse
-POSTMAN
-MYSQL
-Flyway
+  -   Java 8 ou versões acima;
+  -   Spring Tools 4 for Eclipse
+  -   POSTMAN
+  -   MYSQL
+  -   Flyway
