@@ -32,10 +32,6 @@ public class CategoriaResource {
 	@Autowired
 	private ApplicationEventPublisher publisher;
 	
-	@GetMapping
-	public List<Categoria> listar(){
-		return categoriaRepository.findAll();
-	}
 	
 	@PostMapping
 	public ResponseEntity<Categoria> criar(@Valid @RequestBody Categoria categoria, HttpServletResponse response) {
@@ -44,6 +40,11 @@ public class CategoriaResource {
 		publisher.publishEvent(new RecursoCiradoEvent(this, response, categoria.getCodigo()));
 	    
 	    return ResponseEntity.status(HttpStatus.CREATED).body(categoriaSalva);
+	}
+
+	@GetMapping
+	public List<Categoria> listar(){
+		return categoriaRepository.findAll();
 	}
 	
 	@GetMapping("/{codigo}")
